@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="yd.css"/>
+    <i class="fas fa-clone"></i>
+    <span class="material-icons-outlined">
+        
+        </span>
+    <title>Document</title>
+    <style> 
+        input[type=text] {
+          width: 25%;
+          box-sizing: border-box;
+          border: 2px solid rgb(215, 238, 7);
+          border-radius: 25px;
+          font-size: 16px;
+          background-color: white;
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 40px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+          text-decoration: none;
+          
+
+        }
+        
+        input[type=text]:focus {
+          width: 60%;
+          border:none;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="n1">
+    <input type="text" id="myText" placeholder="Paste link here" ></div>
+    
+<script>
+    function myFunction2() {
+  document.getElementById("myText").value="";
+}
+    function myFunction1() {
+    alert('Done');
+}
+function myFunction() {
+  document.getElementById("subhan").src="https://www.youtube.com/embed/"+(document.getElementById("myText").value).substr(-11) ;
+}
+</script>
+<div class="videos">
+<iframe id="subhan" width="90%" height="40%"
+src="https://www.youtube.com/embed/" onLoad="myFunction1();"allowfullscreen='true' >
+</iframe>
+
+</div>
+<div class="watch">
+<button onclick="myFunction()" class="b1" >Watch Now </button>
+
+</div> 
+<div class="watch1">
+    <button onclick="myFunction2()">Reset</button>
+</div>
+</body>
+</html>

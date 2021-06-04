@@ -1,0 +1,58 @@
+.videos{
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.videos > iframe{
+    padding:10px;
+} 
+.watch{
+    padding:20px;
+    text-align:center;
+    position:center;
+   
+} 
+.watch1{
+    
+    text-align:center;
+    position:center;
+   
+} 
+.watch > button:hover {background-color: #05a300;}
+.watch > button{
+    background-color: #08c0f8; 
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:25px;
+}
+.watch1 > button:hover {background-color: #c5c6d6;}
+.watch1 > button{
+    background-color: #f1f1f1; 
+    border-color: aqua;
+    color: rgb(10, 0, 0);
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:25px;
+}
+
+.n1{
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+
+}
