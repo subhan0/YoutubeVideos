@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="yd.css"/>
     <i class="fas fa-clone"></i>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
     <span class="material-icons-outlined">
         
         </span>
-    <title>Document</title>
+    
     <style> 
         input[type=text] {
-          width: 25%;
+          width: 200px;
           box-sizing: border-box;
           border: 2px solid rgb(215, 238, 7);
           border-radius: 25px;
@@ -23,6 +25,8 @@
           -webkit-transition: width 0.4s ease-in-out;
           transition: width 0.4s ease-in-out;
           text-decoration: none;
+          margin-top: -15px;
+          
           
 
         }
@@ -30,13 +34,14 @@
         input[type=text]:focus {
           width: 60%;
           border:none;
+          /* margin-top:50px; */
         }
         </style>
 </head>
 
 <body>
-    <div class="n1">
-    <input type="text" id="myText" placeholder="Paste link here" ></div>
+    <div class="n1"> <h3>Enter Youtube Video Link</h3><br>
+    <input type="text" id="myText" placeholder="paste link here" ></div>
     
 <script>
     function myFunction2() {
@@ -46,21 +51,41 @@
     alert('Done');
 }
 function myFunction() {
+  if (document.getElementById("myText").value==0){
+    alert('Please Enter Video Link');
+  }
+  else if((document.getElementById("myText").value).length<28){
+    alert('Please Enter Valid Link');
+  }
+  else{
   document.getElementById("subhan").src="https://www.youtube.com/embed/"+(document.getElementById("myText").value).substr(-11) ;
 }
+}
 </script>
+
+<div class="s"></div>
+
 <div class="videos">
 <iframe id="subhan" width="90%" height="40%"
-src="https://www.youtube.com/embed/" onLoad="myFunction1();"allowfullscreen='true' >
+src="" allowfullscreen='true' >
 </iframe>
 
 </div>
+<div class="combine">
 <div class="watch">
-<button onclick="myFunction()" class="b1" >Watch Now </button>
-
+<button onclick="myFunction()" onLoad="myFunction1();" id="b1" >Watch Now</button>
 </div> 
 <div class="watch1">
-    <button onclick="myFunction2()">Reset</button>
-</div>
+    <button onclick="myFunction2()">Reset Link</button>
+</div></div>
+<script>
+  var input = document.getElementById("myText");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("b1").click();
+    }
+  });
+  </script>
 </body>
 </html>
