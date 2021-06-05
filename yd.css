@@ -1,25 +1,50 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+}
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/987/648/original/abstract-luxury-white-grey-background-with-golden-line-free-vector.jpg');
+  }
+
+
 .videos{
     text-align:center;
     align-items: center;
     justify-content: space-between;
+    border:none;
+    text-decoration: none;
+    border-color: none !important;
     
 }
-
+.videos > iframe{
+    /* padding:10px; */
+    border:none;
+    text-decoration: none;
+    border-color: none !important;
+} 
 .watch{
     padding:20px;
     text-align:center;
     position:center;
    
 } 
+h3{
+    font-family: 'Barlow', sans-serif;
+    color:rgb(77, 97, 114);
+}
+.s{
+    margin-top: 20px;
+}
 .watch1{
     
     text-align:center;
     position:center;
    
 } 
-.watch > button:hover {background-color: #05a300;}
+.watch > button:hover {background-color: #5f4706;}
 .watch > button{
-    background-color: #08c0f8; 
+    background-color: 	#b19a17; 
     border: none;
     color: white;
     padding: 12px 26px;
@@ -27,30 +52,36 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 2px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius:25px;
 }
-.watch1 > button:hover {background-color: #c5c6d6;}
+.watch1 > button:hover {background-color: #b8681d;}
 .watch1 > button{
-    background-color: #f1f1f1; 
-    border-color: aqua;
-    color: rgb(10, 0, 0);
-    padding: 10px 26px;
+    background-color: #a79da2; 
+    /* border-color: aqua; */
+    color: rgb(243, 243, 243);
+    padding: 10px 29px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 2px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius:25px;
+    border:none;
+    margin-top: -15px;
 }
 
 .n1{
     text-align:center;
     align-items: center;
     justify-content: space-between;
+    margin-top: 80px;
 
+}
+.combine{
+    justify-content: left;
 }
