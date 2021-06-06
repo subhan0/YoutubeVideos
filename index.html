@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <preference name="KeepRunning" value="true" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="yd.css"/>
@@ -58,16 +59,16 @@ function myFunction() {
     alert('Please Enter Valid Link');
   }
   else{
-  document.getElementById("subhan").src="https://www.youtube.com/embed/"+(document.getElementById("myText").value).substr(-11) ;
+  document.getElementById("subhan").src="https://www.youtube.com/embed/"+(document.getElementById("myText").value).substr(-11)+"?autoplay=1&mute=0" ;
 }
 }
 </script>
 
 <div class="s"></div>
 
-<div class="videos">
+<div class="videos" id="subhan1">
 <iframe id="subhan" width="90%" height="40%"
-src="" allowfullscreen='true' >
+src="" allowfullscreen='true' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0">
 </iframe>
 
 </div>
@@ -86,6 +87,7 @@ src="" allowfullscreen='true' >
      document.getElementById("b1").click();
     }
   });
+ 
   </script>
 </body>
 </html>
